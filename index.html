@@ -5,6 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <!-- daisyui  -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome  -->
+    <script
+      src="https://kit.fontawesome.com/3c50f3ba74.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundColor: {
+              "primary-color": "#ABEF5F",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body></body>
+  <body>
+    <header class="mt-6">
+      <div class="navbar bg-base-100 container mx-auto">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-xl"
+            ><img src="./assets/arrow1.png" alt="" />
+            <span class="text-3xl font-extrabold">Rinterio</span></a
+          >
+        </div>
+        <div class="navbar-center hidden md:flex">
+          <ul class="menu menu-horizontal px-1 text-base">
+            <li><a class="font-bold">Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 border border-[#E9E9E9]"
+            >
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+              <div class="gap-4 lg:hidden items-center p-2">
+                <div class="flex items-center gap-2 lg:gap-4">
+                  <div class="border border-[#E9E9E9] rounded-full p-3">
+                    <a href="#"><img src="./assets/search.png" alt="" /></a>
+                  </div>
+                  <div class="border border-[#E9E9E9] rounded-full p-3">
+                    <a href="#"><img src="./assets/cart.png" alt="" /></a>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="btn bg-primary-color w-full mt-4 lg:mt-0 text-xl font-extrabold"
+                  >
+                    Book Consult
+                    <img src="./assets/arrow2.png" alt="" />
+                  </button>
+                </div>
+              </div>
+            </ul>
+          </div>
+          <div class="hidden lg:flex gap-4 items-center p-2">
+            <div class="flex items-center gap-2 lg:gap-4">
+              <div class="border border-[#E9E9E9] rounded-full p-3">
+                <a href="#"><img src="./assets/search.png" alt="" /></a>
+              </div>
+              <div class="border border-[#E9E9E9] rounded-full p-3">
+                <a href="#"><img src="./assets/cart.png" alt="" /></a>
+              </div>
+            </div>
+            <div>
+              <button
+                class="flex items-center gap-2 px-4 py-3 bg-primary-color w-full mt-4 lg:mt-0 text-xl font-extrabold rounded-full"
+              >
+                Book Consult
+                <img src="./assets/arrow2.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
