@@ -25,6 +25,7 @@
           extend: {
             backgroundColor: {
               "primary-color": "#ABEF5F",
+              "secondary-color": "rgba(171, 239, 95, 0.5)",
             },
           },
         },
@@ -32,13 +33,15 @@
     </script>
   </head>
   <body>
-    <header class="mt-6">
-      <div class="navbar bg-base-100 container mx-auto">
+    <header class="lg:pt-5 min-h-screen container mx-auto px-2 lg:px-0">
+      <div class="navbar">
         <div class="navbar-start">
-          <a class="btn btn-ghost text-xl"
-            ><img src="./assets/arrow1.png" alt="" />
-            <span class="text-3xl font-extrabold">Rinterio</span></a
-          >
+          <div class="flex gap-4">
+            <a href="#" class="text-xl flex gap-2">
+              <img src="./assets/arrow1.png" alt="" />
+              <span class="text-3xl font-extrabold">Rinterio</span>
+            </a>
+          </div>
         </div>
         <div class="navbar-center hidden md:flex">
           <ul class="menu menu-horizontal px-1 text-base">
@@ -63,7 +66,7 @@
               <li><a>Portfolio</a></li>
               <li><a>Blogs</a></li>
               <li><a>Contact Us</a></li>
-              <div class="gap-4 lg:hidden items-center p-2">
+              <div class="gap-4 lg:hidden items-center">
                 <div class="flex items-center gap-2 lg:gap-4">
                   <div class="border border-[#E9E9E9] rounded-full p-3">
                     <a href="#"><img src="./assets/search.png" alt="" /></a>
@@ -83,7 +86,7 @@
               </div>
             </ul>
           </div>
-          <div class="hidden lg:flex gap-4 items-center p-2">
+          <div class="hidden lg:flex gap-4 items-center">
             <div class="flex items-center gap-2 lg:gap-4">
               <div class="border border-[#E9E9E9] rounded-full p-3">
                 <a href="#"><img src="./assets/search.png" alt="" /></a>
@@ -99,6 +102,36 @@
                 Book Consult
                 <img src="./assets/arrow2.png" alt="" />
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-sec lg:mt-4">
+        <div class="">
+          <div class="text-center">
+            <div class="">
+              <div class="inline-block text-center">
+                <img src="./assets/banner.png" alt="" />
+              </div>
+              <div class="lg:px-44 space-y-3 lg:space-y-6">
+                <h1
+                  class="text-[28px] lg:text-6xl font-extrabold mt-2 leading-none lg:leading-tight"
+                >
+                  A barn house of this design has a striking appearance
+                </h1>
+                <p class="lg:px-40 text-sm lg:text-base">
+                  The barn house captivates with its blend of rustic charm and
+                  modern sophistication, featuring weathered wood, sleek metal
+                  accents, and large windows that flood the space with natural
+                  light.
+                </p>
+                <button
+                  class="btn bg-secondary-color mt-4 lg:mt-0 text-xl font-extrabold rounded-full w-full lg:w-auto"
+                >
+                  View Details
+                  <img src="./assets/arrow1.png" alt="" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
