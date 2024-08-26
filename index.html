@@ -33,9 +33,7 @@
     </script>
   </head>
   <body>
-    <header
-      class="lg:pt-5 min-h-screen container mx-auto px-2 lg:px-0 mb-[60px]"
-    >
+    <header class="lg:pt-5 min-h-screen container mx-auto px-2 lg:px-0">
       <div class="navbar">
         <div class="navbar-start">
           <div class="flex gap-4">
@@ -390,7 +388,7 @@
         </div>
       </section>
       <!-- article and news section  -->
-      <section class="mb-[50px] lg:mb-[80px]">
+      <section class="">
         <div class="text-center space-y-1 lg:space-y-3">
           <div class="bg-[rgba(171,239,95,0.2)] inline-block p-3 rounded-full">
             <i class="fa-solid fa-arrow-right-long"></i>
@@ -531,5 +529,70 @@
         </div>
       </section>
     </main>
+    <!-- form section  -->
+    <section
+      class="bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover bg-center py-16 mt-8 px-2 lg:px-0"
+    >
+      <div class="text-center space-y-1 lg:space-y-3">
+        <div class="bg-[rgba(171,239,95,0.2)] inline-block p-3 rounded-full">
+          <i class="fa-solid fa-arrow-right-long"></i>
+          <span class="text-base font-bold ]">Let’s Connect</span>
+        </div>
+        <h1 class="text-2xl lg:text-4xl lead font-extrabold">
+          Let’s Discuss Next Project
+        </h1>
+        <p class="max-w-[660px] mx-auto">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+      </div>
+      <form>
+        <div
+          class="grid grid-cols-12 gap-4 md:gap-6 max-w-[970px] mx-auto mt-8"
+        >
+          <input
+            type="text"
+            placeholder="First Name*"
+            name=""
+            id=""
+            class="col-span-12 md:col-span-6 p-4 rounded-full font-medium focus:outline-none"
+          />
+          <input
+            type="text"
+            placeholder="Last Name*"
+            name=""
+            id=""
+            class="col-span-12 md:col-span-6 p-4 rounded-full font-medium focus:outline-none"
+          />
+          <input
+            type="number"
+            placeholder="Phone Number*"
+            name=""
+            id=""
+            class="col-span-12 md:col-span-6 p-4 rounded-full font-medium focus:outline-none"
+          />
+          <input
+            type="email"
+            placeholder="Email Number*"
+            name=""
+            id=""
+            class="col-span-12 md:col-span-6 p-4 rounded-full font-medium focus:outline-none"
+          />
+          <textarea
+            name=""
+            id=""
+            rows="6"
+            placeholder="Write your message here"
+            class="col-span-12 p-4 rounded-2xl font-medium focus:outline-none"
+          ></textarea>
+          <button
+            class="flex items-center col-span-12 gap-2 px-4 py-3 bg-primary-color lg:mt-0 text-xl font-extrabold rounded-full justify-center"
+          >
+            Send Mail
+            <img src="./assets/arrow2.png" alt="" />
+          </button>
+        </div>
+      </form>
+    </section>
   </body>
 </html>
